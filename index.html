@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/d8ebc2a63b.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+
+  <div class="originalnav d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" id="nav">
+    <i class="fas fa-window-close" id="hamberger" onclick="collapse()"></i>
+    <div class="navitems" id="navitems">
+      <img id="headimg" src="dp.jpeg" alt="no image">
+      <div id="namediv">
+        <a href="#home" class="text-white text-decoration-none" id="name">
+          <strong>Pradip Sarkar</strong>
+        </a>
+      </div>
+      <hr>
+      <ul class="nav nav-pills flex-column  mb-auto" style="margin-top: 10vh;">
+        <li class="lists "">
+              <a href=" #home" class="nav-link text-white center" aria-current="page">
+          <i class="fas fa-laptop-house" style="margin-right: 10px;"></i>
+          Home
+          </a>
+        </li>
+        <li class="lists">
+          <a href="#about" class="nav-link text-white center">
+            <i class="fas fa-address-card" style="margin-right: 10px;"></i>
+            Skills
+          </a>
+        </li>
+        <li class="lists">
+          <a href="#education" class="nav-link text-white center">
+            <i class="fas fa-user-graduate" style="margin-right: 10px;"></i>
+            About me
+          </a>
+        </li>
+        <li class="lists">
+          <a href="#projects" class="nav-link text-white center">
+            <i class="fas fa-tasks" style="margin-right: 10px;"></i>
+            Projects
+          </a>
+        </li>
+        <li class="lists">
+          <a href="#contact" class="nav-link text-white center">
+            <i class="fas fa-id-card" style="margin-right: 10px;"></i>
+            Contact me
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Home Page -->
+  <section id="home" class="text-white originalhome" data-aos="fade-up">
+    <div id="homecontent">
+      <p style="font-family: 'Prompt', sans-serif;">Hello!!</p>
+      <div id="namehead">I'M PRADIP SARKAR</div>
+      <div id="post">Full-Stack Web developer
+      </div>
+      <div style="font-family: 'Prompt', sans-serif;">This is my official portfolio website .You can check out my skills
+        and all of my projects</div>
+      <div style="font-family: 'Prompt', sans-serif; margin-top:10px">You can connect with me by these social media
+        platforms-</div>
+      <div style="margin-top: 20px;" id="media">
+        <a href="https://www.facebook.com/profile.php?id=100010771456028" style="color: white; text-decoration: none;" target="_blank">
+        <i class="fab fa-facebook-square fa-lg icons"></i>
+        </a>
+        <a href="https://www.instagram.com/mr_chitrokar/" style="color: white; text-decoration: none;" target="_blank">
+        <i class="fab fa-instagram-square fa-lg icons"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/pradip-sarkar-07aa9a202/" style="color: white; text-decoration: none;" target="_blank">
+        <i class="fab fa-linkedin fa-lg icons"></i>
+        </a>
+        <a href="https://github.com/sarkarpradip2002" style="color: white; text-decoration: none;" target="_blank">
+        <i class="fab fa-github-square fa-lg icons"></i>
+        </a>
+      </div>
+      <a href="#contact" style="color: white;text-decoration: none; ">
+      <div id="buttongroup">
+        <button id="CVbutton">Contact me</button>
+        <i class="fas fa-paper-plane"></i>
+      </div>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Skills part -->
+  <section id="about" class="text-white about" data-aos="fade-up">
+    <div id="abouthead">
+      <strong>My Skills</strong>
+    </div>
+    <hr class="hr">
+    <div id="skillbars" data-aos="fade-up">
+      <div class="spanbars">
+        <div><strong>C :</strong> </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+            style="width: 85%; color:black;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <strong>85%</strong></div>
+        </div>
+      </div>
+      <div class="spanbars">
+        <div><strong>C++ :</strong> </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+            style="width: 50%; color:black;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <strong>50%</strong></div>
+        </div>
+      </div>
+      <div class="spanbars">
+        <div><strong>Javascript :</strong> </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+            style="width: 70%; color:black;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <strong>70%</strong></div>
+        </div>
+      </div>
+      <div class="spanbars">
+        <div><strong>Node js :</strong> </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+            style="width: 55%; color:black;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <strong>55%</strong></div>
+        </div>
+      </div>
+      <div class="spanbars">
+        <div><strong>HTML :</strong> </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+            style="width: 80%; color:black;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <strong>80%</strong></div>
+        </div>
+      </div>
+      <div class="spanbars">
+        <div><strong>CSS :</strong> </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+            style="width: 75%; color:black;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <strong>75%</strong></div>
+        </div>
+      </div>
+      <div class="spanbars">
+        <div><strong>React :</strong> </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
+            style="width: 45%; color:black;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <strong>45%</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education part -->
+  <section id="education" class="text-white originaledu" data-aos="fade-up">
+    <div id="eduhead">
+      <strong>About me</strong>
+    </div>
+    <hr style="width: 80%;margin: auto;z-index: -1;position: relative;     margin-top: 21px;">
+    <div id="edudetails">
+      <div id="introbox" data-aos="fade-up">
+        <div class="intro">
+          <p>Name : </p>
+          <p style="color: #f5f52a;"> Pradip Sarkar</p>
+        </div>
+        <div class="intro">
+          <p>Age :</p>
+          <p style="color: #f5f52a;"> 20</p>
+        </div>
+        <div class="intro">
+          <p>Qualification :</p>
+          <p style="color: #f5f52a;">Studying B.Tech on ECE</p>
+        </div>
+        <div class="intro">
+          <p>Post :</p>
+          <p style="color: #f5f52a;">Full Stack Devoloper</p>
+        </div>
+        <div class="intro">
+          <p>Language :</p>
+          <p style="color: #f5f52a;">Bengali , English , Hindi</p>
+        </div>
+        <div id="buttongroup">
+          <button id="CVbutton">Download CV</button>
+          <i class="fas fa-download"></i>
+        </div>
+      </div>
+      <div id="eduperso" data-aos="fade-up">
+        <div class="eduexp">
+          <div class="numbers">
+            <strong>1+</strong>
+          </div>
+          <div class="texts">
+            Years of experience
+          </div>
+        </div>
+        <div class="eduexp">
+          <div class="numbers">
+            <strong>27+</strong>
+          </div>
+          <div class="texts">
+            Projects Completed
+          </div>
+        </div>
+        <div class="eduexp">
+          <div class="numbers">
+            <strong>4</strong>
+          </div>
+          <div class="texts">
+            star at Hackerrank
+          </div>
+        </div>
+        <div class="eduexp">
+          <div class="numbers">
+            <strong>10+</strong>
+          </div>
+          <div class="texts">
+            Certificates & Badges
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects part -->
+  <section id="projects" class="projects" data-aos="fade-up">
+    <div id="projecthead">
+      <strong>My Projects</strong>
+    </div>
+    <hr style="width: 80%;margin: auto;z-index: -1;position: relative;     margin-top: 21px; color: beige;">
+    <div id="containers">
+      <div id="chat" class="projectdivs text-white" onmouseout="chat()" data-aos="fade-up">
+        <a href="https://group-messenging.herokuapp.com/" target="_blank"><img src="chat.jpg" alt=""></a>
+        <i class="fas fa-link fa-3x links" id="chatlink"></i>
+      </div>
+      <div id="tic" class="projectdivs text-white" onmouseout="tic()" data-aos="fade-up">
+        <a href="https://tic-tac-toe-twoplayer.herokuapp.com/" target="_blank"><img src="tic.png" alt=""></a>
+        <i class="fas fa-link fa-3x links" id="ticlink"></i>
+      </div>
+      <div id="notes" class="projectdivs text-white" onmouseout="notes()" data-aos="fade-up">
+        <a href="https://stickynotes2.herokuapp.com/" target="_blank"><img src="notes.png" alt=""></a>
+        <i class="fas fa-link fa-3x links" id="noteslink"></i>
+      </div>
+      <div id="dino" class="projectdivs text-white" onmouseout="dino()" data-aos="fade-up">
+        <a href="https://sarkarpradip2002.github.io/Dino-game/" target="_blank"><img src="dino.jpg" alt=""></a>
+        <i class="fas fa-link fa-3x links" id="dinolink"></i>
+      </div>
+      <div id="news" class="projectdivs text-white" onmouseout="news()" data-aos="fade-up">
+        <img src="news.jpg" alt="">
+        <i class="fas fa-link fa-3x links" id="newslink"></i>
+      </div>
+      <div id="windows" class="projectdivs text-white" onmouseout="windows()" data-aos="fade-up">
+        <a href="https://sarkarpradip2002.github.io/windows-11-clone/" target="_blank"><img src="windows.jpg"
+            alt=""></a>
+        <i class="fas fa-link fa-3x links" id="windowslink"></i>
+      </div>
+      <div id="dogs" class="projectdivs text-white" onmouseout="dogs()" data-aos="fade-up">
+        <a href="https://sarkarpradip2002.github.io/Dogs-photos/" target="_blank"><img src="dogs.jpg" alt=""></a>
+        <i class="fas fa-link fa-3x links" id="dogslink"></i>
+      </div>
+      <div id="analog" class="projectdivs text-white" onmouseout="analog()" data-aos="fade-up">
+        <a href="https://sarkarpradip2002.github.io/Analog-Clock/" target="_blank"><img src="analog.jpg" alt=""></a>
+        <i class="fas fa-link fa-3x links" id="analoglink"> </i>
+      </div>
+      <div id="word" class="projectdivs text-white" onmouseout="word()" data-aos="fade-up">
+        <a href="https://sentenceapp.herokuapp.com/" target="_blank"><img src="word.jpg" alt=""></a>
+        <i class="fas fa-link fa-3x links" id="wordlink"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact me -->
+  <section id="contact" class="contact text-white" data-aos="fade-up">
+    <div id="contacthead"><strong>Contact Me</strong></div>
+    <hr style="width: 80%;margin: auto;z-index: -1;position: relative; margin-top: 21px; color: beige;">
+    <div  id="contactbody">
+    <div class="text-white" data-aos="fade-up">
+      <h2 style="margin-bottom: 35px;">Contact Info</h2>
+        <div class="inforows">
+          <i class="fas fa-envelope fa-lg infoicon"></i>
+          <p class="infotext">pradip.sarkar2002@gmail.com</p>
+        </div>
+        <div class="inforows">
+          <i class="fas fa-phone fa-lg infoicon"></i>
+          <p class="infotext">9330338139</p>
+        </div>
+        <div class="inforows">
+          <i class="fas fa-phone fa-lg infoicon"></i>
+          <p class="infotext">8276898085</p>
+        </div>
+        <div class="inforows">
+          <i class="fas fa-map-marker-alt fa-lg infoicon"></i>
+          <p class="infotext">Agarpara , KOL-700109</p>
+        </div>
+    </div>
+    <div id="contactinputs" data-aos="fade-up">
+      <input type="text" class="input" placeholder="Name">
+      <input type="text" class="input" placeholder="Email">
+      <textarea name="" id="" cols="30" rows="10" class="textarea" placeholder="Message"></textarea>
+      <div id="senddiv" class="text-white">
+        <button id="sendbutton">Send</button>
+        <i class="fas fa-paper-plane"></i>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Footer part -->
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top text-white">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span  style="color: white;margin-left: 10px;">©  www.Pradip Sarkar.com</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a href="https://www.facebook.com/profile.php?id=100010771456028" style="color: white; text-decoration: none;" target="_blank">
+        <i class="fab fa-facebook-square fa-lg icons"></i>
+        </a></li>
+      <li class="ms-3"><a href="https://www.instagram.com/mr_chitrokar/" style="color: white; text-decoration: none;" target="_blank">
+        <i class="fab fa-instagram-square fa-lg icons"></i>
+        </a></li>
+      <li class="ms-3"><a href="https://www.linkedin.com/in/pradip-sarkar-07aa9a202/" style="color: white; text-decoration: none;" target="_blank">
+        <i class="fab fa-linkedin fa-lg icons"></i>
+        </a></li>
+    </ul>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+<script defer src="index.js"></script>
+
+</html>

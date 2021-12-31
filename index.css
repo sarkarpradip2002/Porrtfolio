@@ -1,0 +1,640 @@
+body{
+    background-color:  #2a2828;
+    min-height: 100vh;
+    font-family: 'Exo 2', sans-serif;
+    scroll-behavior: smooth;
+    scrollbar-color: #f5f52a;
+    overflow-x: hidden;
+}
+
+#nav{
+    transition: transform 0.5 ease-in-out;
+}
+.originalnav{
+    animation: navani1 .5s ease-in-out .1s alternate;
+    width: 280px;
+}
+@keyframes navani1{
+    0%{
+        width: 35px;
+    }
+    100%{
+        width: 280px;
+    }
+}
+.changenav{
+    animation: navani .5s ease-in-out .1s alternate;
+}
+@keyframes navani{
+    0%{
+        width: 280px;
+    }
+    100%{
+        width: 35px;
+    }
+}
+#nav{
+    min-height: 100vh;
+    position: fixed;
+}
+
+.navitems{
+    animation: navbarani1 .5s ease-in-out .1s alternate;
+    margin-left: 0px;
+}
+@keyframes navbarani1{
+    0%{
+        margin-left: -290px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+.changenavbar{
+    animation: navbarani .5s ease-in-out .1s alternate;
+    margin-left: -290px;
+}
+@keyframes navbarani{
+    0%{
+        margin-left: 0px;
+    }
+    100%{
+        margin-left: -290px;
+    }
+}
+
+#hamberger{
+    margin-left: -6px;
+}
+#hamberger:hover{
+    cursor: pointer;
+}
+
+#heading{
+   object-fit: fill;
+}
+
+#name{
+    margin-left:22px; 
+    font-size: 32px;
+    transition:  .5s ease-in-out .1s ;
+}
+#name:hover{
+    margin-left: 0px;
+    font-size: 40px;
+}
+#namediv{
+    animation: pradip 1s ease-in-out .1s alternate;
+}
+@keyframes pradip{
+    0%{
+        margin-top: -233px;
+    }
+    50%{
+        margin-top: 0px;
+    }
+    75%{
+        margin-top: -20px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+
+#headimg{
+    object-fit: contain;
+    border: 5px solid #f5f52a;
+    height: 132px;
+    width: 127px;
+    border-radius: 94px;
+    margin-left: 23%;
+    margin-bottom: 13px;
+    margin-top: 23px;
+}
+.center{
+    /* text-align: center; */
+    font-size: 18px;
+}
+.lists{
+    transition: .1s ease-in-out .1s ;
+    margin-bottom: 10px;
+}
+.lists:hover{
+    background-color: #f5f52a;
+    border-radius: 37px;
+}
+
+/* Home page */
+.originalhome{
+    margin-left: 300px;
+    animation: homeoriginal .5s ease-in-out .1s alternate;
+}
+#namehead{
+    font-size: 40px;font-family: 'Dancing Script', cursive; color: #f5f52a;
+}
+#post{
+    font-family: 'Prompt', sans-serif; font-size: 25px; margin-bottom: 10px;
+}
+@keyframes homeoriginal{
+    0%{
+        margin-left: 40px;
+    }
+    100%{
+        margin-left: 300px;
+    }
+}
+.changehome{
+    animation: homechange .5s ease-in-out .1s alternate;
+    margin-left: 40px;
+}
+@keyframes homechange{
+    0%{
+        margin-left: 300px;
+    }
+    100%{
+        margin-left: 40px;
+    }
+}
+#home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+#homecontent{
+    height: 100vh;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#homeimage{
+    height: 384px;
+    width: 241px;
+    border-radius: 91px;
+    border-top-right-radius: 168px;
+    border-bottom-left-radius: 172px;
+    border: 3px solid #f5f52a;
+}
+.icons{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* #about me */
+.about{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 280px;
+}
+.changeabout{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left:71px;
+}
+#abouthead{
+    font-size: 44px;
+    color: #f5f52a;
+    transition: 0.5s ease-in-out .1s;
+    margin-top: 10px;
+}
+#skillbars{
+    width: 474px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 482px;
+}
+.spanbars{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 48px;
+}
+.hr{
+    width: 80%;
+    margin-top: 0px;
+    z-index: -1;
+    position: relative;
+}
+
+/* Education part */
+#education{
+    height: 100vh;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.originaledu{
+    margin-left: 277px;
+}
+.changeedu{
+    margin-left: 35px;
+}
+#edudetails{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+#eduhead{
+    text-align: center;
+    font-size: 44px;
+    color: #f5f52a;
+    transition: 0.5s ease-in-out .1s;
+    margin-top: 59px;
+}
+.intro{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+#introbox{
+    display: flex;
+    flex-direction: column;
+}
+#eduperso{
+    display: grid;
+    grid-template-columns:repeat(2,200px);
+    grid-gap: 38px;
+}
+.eduexp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 137px;
+    width: 185px;
+    background-color: #4a4444;
+}
+.numbers{
+    font-size: 40px;
+    color: #f5f52a;
+    margin: 2px;
+}
+.texts{
+    text-align: center;
+    font-size: 17px;
+}
+#CVbutton{
+    width: 158px;
+    background-color: #2a2828;
+    border: 2px solid #2a2828;
+    height: 49px;
+    color: white;
+    border-radius: 31px;
+    cursor: pointer;
+}
+#buttongroup{
+    border: 2px solid;
+    width: 194px;
+    border-radius: 39px;
+    margin-top: 33px;
+}
+#buttongroup:hover{
+    background-color: #f5f52a;
+    border: 2px solid #f5f52a;
+    color:  black;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+/* Projects part */
+#projects{
+    height: 130vh;
+}
+.projects{
+    margin-left: 262px;
+}
+.changeprojects{
+    margin-left: 35px;
+}
+#projecthead{
+    text-align: center;
+    font-size: 44px;
+    color: #f5f52a;
+}
+#containers{
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    grid-gap: 58px;
+    justify-content: center;
+    grid-row-gap: 25px;
+    margin-top: 89px;
+}
+.projectdivs{
+    height: 195px;
+    width: 195px;
+    /* position: relative; */
+}
+.projectdivs img{
+    height: 195px;
+    width: 195px;
+    object-fit: cover;
+    transition:  0.2s ease-in-out .1s;
+    border-radius: 38px;
+}
+.projectdivs:hover img{
+    cursor: pointer;
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+.links{
+    position: absolute;
+    
+    margin-top: -125px;
+    margin-left: 74px;
+    cursor: pointer;
+
+    display: none;
+}
+
+/* Contact Part */
+#contact{
+    height: 115vh;
+}
+.contact{
+    margin-left: 273px;
+}
+.changecontact{
+    margin-left: 35px;
+}
+#contactbody{
+    margin-top: 100px;
+    font-family: 'Hind Siliguri', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#contacthead{
+    text-align: center;
+    font-size: 44px;
+    color: #f5f52a;
+}
+.inforows{
+    display: flex;
+}
+.infotext{
+    margin-left: 18px;
+    font-size: 21px;
+}
+.infoicon{
+    margin-top: 10px;
+    color: #f5f52a;
+}
+#contactinputs{
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    background-color: #221e1e;
+    border: 1px solid white;
+    color: white;
+    margin-bottom: 21px;
+    font-size: 20px;
+    height: 53px;
+    width: 445px;
+    border-radius: 11px;
+    padding: 16px;
+}
+.textarea{
+    background-color: #221e1e;
+    border: 1px solid white;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 21px;
+    border-radius: 33px;
+    padding: 16px;
+}
+#sendbutton{
+    width: 74px;
+    background-color: #2a2828;
+    border: 2px solid #2a2828;
+    height: 43px;
+    color: white;
+    border-radius: 31px;
+    cursor: pointer;
+}
+#senddiv{
+    border: 2px solid;
+
+    border: 2px solid;
+    width: 122px;
+    border-radius: 39px;
+    margin-top: 12px;
+}
+#senddiv:hover{
+    background-color: #f5f52a;
+    border: 2px solid #f5f52a;
+    color:  black;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+/* For responsiveness */
+@media (max-width:1079px){
+    .originalhome{
+        margin-left: 35px;
+    }
+    .about{
+        margin-left: 35px;
+    }
+    .changeabout{
+        margin-left: 35px;
+    }
+    .originaledu{
+        margin-left: 35px;
+    }
+    .projects{
+        margin-left: 35px;
+    }
+    .contact{
+        margin-left: 35px;
+    }
+}
+
+@media (max-width:933px){
+     #edudetails{
+         justify-content: center;
+     }
+     #eduperso{
+         grid-gap: 19px;
+         margin-left: 27px;
+     }
+     #contactbody{
+         justify-content: center;
+     }
+     #contactinputs{
+         margin-left: 23px;
+     }
+     .input{
+         width: 375px;
+     }
+}
+
+@media (max-width:800px){
+    #homecontent{
+        margin-left: 12px;
+    }
+    #namehead{
+        font-size: 29px;
+    }
+    #post{
+        font-size: 20px;
+    }
+    #edudetails{
+        flex-direction: column;
+    }
+    #eduperso{
+        margin-top: 38px;
+    }
+    #edudetails{
+        margin-top: 49px;
+    }
+    #containers{
+        grid-gap: 18px;
+        grid-row-gap: 33px;
+    }
+    #contactbody{
+        flex-direction: column;
+    }
+    #education{
+        height: 118vh;
+    }
+    #contactinputs{
+        margin-top: 60px;
+    }
+    #contact{
+        height: 148vh;
+    }
+    #senddiv{
+        margin-top: -5px;
+    }
+}
+
+@media (max-width:670px){
+    #home{
+        flex-direction: column;
+        height: 138vh;
+    }
+    #homecontent{
+        margin-top: -218px;
+        margin-bottom: -297px;
+    }
+    #homeimage{
+        margin-top: 83px;
+    }
+    #containers{
+        grid-template-columns: repeat(2,200px);
+    }
+    #projects{
+        height: 184vh;
+    }
+}
+@media (max-width:544px){
+    #skillbars{
+        width: 331px;
+        justify-content: center;
+    }
+    .spanbars{
+        margin-top: 30px;
+    }
+}
+@media (max-width:466px){
+    #containers{
+        grid-template-columns: repeat(1,234px);
+    }
+    #buttongroup {
+        margin: auto;
+        margin-top: 33px;
+    }
+    #abouthead{
+        font-size: 38px;
+    }
+    #eduhead{
+        font-size: 38px;
+    }
+    #projecthead{
+        font-size: 38px;
+    }
+    #contacthead{
+        font-size: 38px;
+    }
+    #projects{
+        height: 363vh;
+    }
+    .projectdivs{
+        height: 234px;
+        width: 234px;
+    }
+    .projectdivs img{
+        height: 234px;
+        width: 234px;
+    }
+    .links{
+        margin-top: -144px;
+        margin-left: 91px;
+    }
+    #eduperso{
+        grid-gap: 15px;
+        grid-row-gap: 37px;
+        grid-template-columns: repeat(2,166px);
+    }
+    .eduexp{
+        height: 126px;
+        width: 166px;
+    }
+}
+@media (max-width:400px){
+    #buttongroup{
+        margin: auto;
+        margin-top: 33px;
+    }
+    #home{
+        height: 122vh;
+    }
+    #media{
+        margin-bottom: 33px;
+    }
+    #homecontent{
+        margin-top: 0px;
+    }
+    #homeimage{
+        margin-top: 281px;
+    }
+    #eduperso{
+        grid-template-columns: repeat(1,200px);
+        margin-left: 0px;
+        margin-top: 92px;
+    }
+    #abouthead{
+        margin-top: 76px;
+    }
+    #education{
+        height: 210vh;
+    }
+    .eduexp{
+        height: 200px;
+        width: 200px;
+    }
+    .input{
+        width: 297px;
+    }
+    .textarea{
+        width: 297px;
+        height: 208px;
+    }
+    #contact{
+        height: 128vh;
+    }
+}
+
