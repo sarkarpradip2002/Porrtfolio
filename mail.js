@@ -1,5 +1,6 @@
 var nodemailer=require('nodemailer');
 const express=require('express');
+const path=require('path');
 var cors = require('cors');
 const { urlencoded } = require('express');
  
@@ -8,6 +9,10 @@ app.use(cors())
 const port=5200;
 app.use(express.json());
 app.use(urlencoded({extended:false}))
+
+app.get('/',(req,res)=>{
+    res.sendFile(path.join(__dirname,'index.html'));
+})
 
 app.post('/mail',async(req,res)=>{
     const send=req.body.mail;
