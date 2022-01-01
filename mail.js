@@ -16,7 +16,7 @@ app.get('/',(req,res)=>{
 })
 
 app.post('/mail',async(req,res)=>{
-    const send=req.body.mail;
+    const send=req.body.email;
     try{
 var transport=nodemailer.createTransport({
     service: 'gmail',

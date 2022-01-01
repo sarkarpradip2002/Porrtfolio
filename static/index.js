@@ -107,23 +107,23 @@ function word(){
     i.style.display='none';
 }
 
-async function sendmail(){
-    const name=document.getElementById('givenname').value;
-    const mail=document.getElementById('givenmail').value;
-    const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    const message=document.getElementById('givenmessage').value;
-    const response=await fetch(`http://localhost:5200/mail`, {
-         method: 'POST',
-         headers: {
-           'Content-Type': 'application/json',
-         },
-         body: JSON.stringify({name,message,mail}),
-       })
-    console.log(response)
-    if(mail.match(regexEmail)){
-        alert("Email sent successfully!!!")
-    }
-    else{
-        alert("Write the correct email to sent !!!");
-    }
-}
+// async function sendmail(){
+//     const name=document.getElementById('givenname').value;
+//     const mail=document.getElementById('givenmail').value;
+//     const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+//     const message=document.getElementById('givenmessage').value;
+//     const response=await fetch(`http://localhost:5200/mail`, {
+//          method: 'POST',
+//          headers: {
+//            'Content-Type': 'application/json',
+//          },
+//          body: JSON.stringify({name,message,mail}),
+//        })
+//     console.log(response)
+//     if(mail.match(regexEmail)){
+//         alert("Email sent successfully!!!")
+//     }
+//     else{
+//         alert("Write the correct email to sent !!!");
+//     }
+// }
