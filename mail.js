@@ -8,6 +8,7 @@ const app=express();
 app.use(cors())
 const port=5200;
 app.use(express.json());
+app.use('/static',express.static('static'));
 app.use(urlencoded({extended:false}))
 
 app.get('/',(req,res)=>{
