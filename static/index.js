@@ -9,7 +9,7 @@ collapse=()=>{
     const projects=document.getElementById('projects');
     const contact=document.getElementById('contact')
     const img=document.createElement('img');
-         img.src='background.jpeg';
+         img.src='../static/background.jpeg';
          img.id='homeimage';
     if(navbar.className==='navitems' ){
          navbar.classList.remove('navitems');
