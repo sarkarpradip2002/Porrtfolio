@@ -11,7 +11,9 @@
   "main": "mail.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node mail.js"
+    "start": "node mail.js",
+    "build": "grunt dist",
+    "postinstall": "./node_modules/bower/bin/bower install && npm run build"
   },
   "author": "Pradip",
   "license": "ISC",
